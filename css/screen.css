@@ -1,0 +1,376 @@
+﻿
+/* Generates 3 errors in CSS Validator*/
+
+html {
+	background: url(../img/bg.jpg) no-repeat top left;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/*
+	Variable Grid System.
+	Learn more ~ http://www.spry-soft.com/grids/
+	Based on 960 Grid System - http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+*/
+
+body {
+  min-width: 960px;
+  font-family:"Gill Sans MT", sans-serif, Verdana;
+  font-size:1em;
+}
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_4 {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:2em;
+	padding-bottom:.6em;
+	width: 960px;
+	background-color: rgba(255,255,255,0.4);
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4 {
+	display:inline;
+	float: left;
+	position: relative;
+}
+
+/* Grid >> 4 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_4 .grid_1 {
+	width:220px;
+}
+
+.container_4 .grid_2 {
+	width:440px;
+}
+
+.container_4 .grid_3 {
+	width:680px;
+}
+
+.container_4 .grid_4 {
+	width:940px;
+}
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.right{
+	float:right;
+	margin-left:1em;
+	padding-top:0.5em;
+}
+
+.left{
+	float:left;
+	margin:0 1em 0 1em;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+h1{
+	font-family:Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
+	font-size:2em;
+	margin-top:.8em;
+}
+
+h2{
+	font-family:Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
+	font-size:1.6em;
+	line-height:1.2em;
+	margin:1.5em 0 .6em 0;
+}
+
+h3{
+	font-family:Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
+	font-size:1em;
+	color:white;
+	margin:.4em 0 0 0;	
+}
+
+hr{
+	float:left;
+	width:96%;
+	height:1px;
+	border:0;
+	border-bottom: 1px solid white;
+}
+
+p{
+	line-height:1.4em;
+	max-width:860px;
+	margin:.6em 0em 0em 0em;
+}
+
+a{
+	text-decoration:none;
+	color:white;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+ul{
+	font-family:"Gill Sans MT", sans-serif, Verdana;
+	font-size:1.1em;
+	line-height:1.6em;
+}
+
+em{
+	color:white;
+}
+
+img{
+	border:3px solid white;
+}
+
+input{
+	width:340px;
+	height:30px;
+	margin-bottom: 1.2em;
+	background-color:rgba(14, 41, 13, 0.4);
+	color:white;
+	border:2px dashed white;
+	padding-left:5px;
+	margin-top:.3em;
+}
+
+textarea{
+	width:335px;
+	height:292px;
+	background-color:rgba(14, 41, 13, 0.4);
+	font-family:"Gill Sans MT", sans-serif, Verdana;
+	color:white;
+	border:2px dashed white;
+	padding:5px;
+}
+
+button{
+	color:white;
+	border:none;
+	text-shadow: -1px -1px 0px #101010, 1px 1px 0px #505050;
+}
+
+#header{
+	float:left;
+	padding:1em .6em .8em .6em;
+}
+
+#logo{
+	border:none;
+}
+
+#ribbon{
+	width:643px;
+	height:92px;
+	float: right;
+	margin: 0.5em -2.3em 0 0;
+	background: url(../img/ribbon.png);
+	text-align:center;
+}
+
+#ribbon #slogan{
+	font-family: Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
+	font-size: 2em;
+	text-shadow: black 0.03em 0.03em 0.1em;
+	color: white;
+	margin-top:.5em;
+}
+
+#menu{
+	text-shadow: -1px -1px 0px #2C2416, 1px 1px 0px #453823;
+	font-size:2em;
+	width:230px;
+}
+
+#menu li{
+	height:63px;
+	background: url(../img/menu_button.png) no-repeat;
+}
+
+#menu li:hover, #menu li.selected{
+	background: url(../img/menu_button_over.png) no-repeat;
+}
+
+#menu a{
+	position:relative;
+	padding:0.2em 3.6em 0.2em 0.8em;
+	top:.1em;
+}
+
+#menu a:hover{
+	text-decoration:none;
+}
+
+#banner img{
+	width:695px;
+	height:308px;
+	margin-left:1.25em;
+}
+
+#banner #tag{
+	width:695px;
+	height:90px;
+	background-color:rgba(0,0,0,0.5);
+	color: white;
+	position: absolute; 
+	left:1.45em;
+	top:13.8em;
+}
+
+#banner #tag #tag_text{
+	font-family: Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
+	font-size: 1.6em;
+	font-weight: bold;
+	width:415px;
+	float:left;
+	margin: 0.7em 0 0 2em;	
+}
+
+.button{
+	font-family: "Gill Sans MT", Verdana;
+	text-align:center;
+	font-size: 1.6em;
+	background: url(../img/button.png);
+	width:7.30em;
+	height:1.95em;
+	margin:.8em 0 2em 0;
+	float:left;
+}
+
+.button a{
+	width:187px;
+	height:40px;
+	float:left;
+	text-shadow: -1px -1px 0px #101010, 1px 1px 0px #505050;
+	padding-top:0.4em;
+}
+
+.button a:hover{
+	text-decoration:none;
+}
+
+.button:hover{
+	background: url(../img/button_over.png);
+}
+
+#content{
+	float:left;
+	margin-left: 0.7em;
+	width:908px;
+	padding-left:1.6em;
+	background-color:rgba(105,150,60,0.6);
+	border-right:3px solid #fff;
+	border-left:3px solid #fff;
+	border-top:3px solid #fff;
+}
+
+#content h1{
+	line-height:1.8em;
+	border-bottom: 3px dotted  #496729;
+	width:96%;
+}
+
+#content ul{
+	list-style:inside;
+	list-style-image:url(../img/point.png);
+	line-height:1.8em;
+	margin-top:1em;
+}
+
+#content a{
+	font-size:1.1em;
+}
+
+#content a:hover{
+	font-size:1.1em;
+}
+
+.teaser{
+	padding-right:1em;
+}
+
+.teaser h2{
+	min-height: 2.4em;
+}
+
+.teaser p{
+	min-height:9em;
+	margin:0;
+	padding:0;
+}
+
+.teaser img{
+	width:180px;
+	height:180px;
+}
+
+#company_img{
+	border-style:none;
+}
+
+#contact ul{
+	list-style:none;
+	margin:.6em 0 .8em 0;
+}
+
+#map{
+	border: 3px solid white;
+	width:400px;
+	height:300px;
+}
+
+#footer{
+	height:250px;
+	width:901px;
+	margin-left: .7em;
+	padding-left: 2em;
+	background: url(../img/grass.png) no-repeat bottom left;
+	border-right:3px solid #fff;
+	border-left:3px solid #fff;
+	border-bottom:3px solid #fff;
+	color:white;
+}
+
+#footertext{
+	position:relative;
+	top:7.6em;
+}
+
+#footer p{
+	margin:0;
+	font-size:0.9em;
+	line-height: 1.2em;
+	padding-right:1.5em;
+}
